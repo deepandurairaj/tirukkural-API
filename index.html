@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIRUKKURAL</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/tiruvalluvar Image.png" type="x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+
+</head>
+<body>
+    <section class="videoSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="kural-title">திருக்குறள்</h1>
+                </div>
+                <div class="col-lg-12 kuralInputSet mb-2">
+                    <input type="text" class="kuralNumber" id="kuralNumber" placeholder="சரியான குறள் எண்ணை உள்ளிடவும்">
+                    <button type="submit" id="submit_kural">குறள் தேடல்</button>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <img src="./images/tiruvalluvar Image.png" class="img-fluid" alt="TIRUVALLUVAR">
+                            <h3>திருவள்ளுவர்</h3>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="kural-set">
+                                <p>அதிகாரம்</p>
+                                <p class="fw-bold adhigaaram" id="adhigaaram"></p>
+                            </div>
+                            <div class="kural-set">
+                                <p>இயல்</p>
+                                <p class="fw-bold iyeal" id="iyeal"></p>
+                            </div>
+                            <div class="kural-set">
+                                <p>பால்</p>
+                                <p class="fw-bold paal" id="paal"></p>
+                            </div>
+                            <div class="kural-set">
+                                <p>திருக்குறள்</p>
+                                <div class="tirukuralset">
+                                    <p class="fw-bold kuralMudhalVari" id="kuralMudhalVari"></p>
+                                    <p class="fw-bold kuralerandamVari" id="kuralerandamVari"></p>
+                                </div>
+                               
+                            </div>
+                            <div class="vilakkam">
+                                <p>திருக்குறள் விளக்கம் :</p>
+                                <p class="fw-bold kural-vilakkam" id="kural-vilakkam"></p>
+                            </div>
+                            <div class="errorSecreen">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="./app.js"></script>
+</body>
+</html>

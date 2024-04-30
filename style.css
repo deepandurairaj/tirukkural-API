@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+section{
+    overflow: hidden;
+    background-color: #94a7d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    overflow: hidden !important;
+}
+.kural-div{
+    background-color: #bbc1bd;
+}
+h1{
+    font-weight: bold !important;
+    text-align: center;
+}
+h3{
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold !important;
+    margin-bottom: 15px;
+}
+.kural-title{
+    margin-top: 50px;
+}
+p{
+    margin: 0 !important;
+}
+.kuralInputSet{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kuralNumber{
+    width: 340px;
+    height: 35px !important;
+    border-radius: 30px;
+    border: 4px solid #bbc1bd;
+    padding-left: 20px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.kural-set{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.errorSecreen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(222, 20, 20);
+}
+.vilakkam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.vilakkam{
+    margin-top: 10px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 30px!important;
+    border:3px solid #bbc1bd !important;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #94a7d1;
+    color: #bbc1bd;
+}
