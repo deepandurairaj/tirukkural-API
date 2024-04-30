@@ -11,9 +11,9 @@ let iyeal=document.getElementById('iyeal');
 let paal=document.getElementById('paal');
 let kuralMudhalVari=document.getElementById('kuralMudhalVari');
 let kuralerandamVari =document.getElementById('kuralerandamVari');
-let kuralVilakkam=document.getElementById('kural-vilakkam')
-let errorScreen=document.querySelector('.errorSecreen')
-
+let kuralVilakkam=document.getElementById('kural-vilakkam');
+let errorScreen=document.querySelector('.errorSecreen');
+let kuralset=document.querySelector('.kural-set');
 submit.addEventListener('click', async() =>{
     let kuralnumber=kuralYen.value;
     console.log(kuralnumber);
@@ -39,13 +39,14 @@ async function getKural(kuralNumber){
         console.log(response);
         const data= await response.json();
         console.log(data);
+        errorScreen.textContent='';
         adhigaaram.innerHTML=data.athigaram;
         iyeal.innerHTML=data.iyal;
         paal.innerHTML=data.paal;
         kuralMudhalVari.innerHTML=data.line1;
         kuralerandamVari.innerHTML=data.line2;
         kuralVilakkam.innerHTML=data.urai3;
-        errorScreen.textContent='';
+       
     }
     catch(e){
         console.log(e);
@@ -53,6 +54,12 @@ async function getKural(kuralNumber){
 }
 
 function setError(message){
+    adhigaaram.textContent='';
+    iyeal.textContent='';
+    paal.textContent='';
+    kuralMudhalVari.textContent='';
+    kuralerandamVari.textContent='';
+    kuralVilakkam.textContent='';
     let data=document.createElement('p');
     data.textContent=message;
     data.classList.add('errorSecreen');
