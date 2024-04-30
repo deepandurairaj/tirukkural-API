@@ -11,9 +11,6 @@ section{
     justify-content: center;
     align-items: center;
 }
-body{
-    overflow: hidden !important;
-}
 .kural-div{
     background-color: #bbc1bd;
 }
@@ -63,13 +60,14 @@ p{
     margin-bottom: 10px;
     font-weight: bold;
     color: rgb(222, 20, 20);
+    text-align:center;
 }
 .vilakkam{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
-    text-align: center;
+   text-align: center;
 }
 .vilakkam{
     margin-top: 10px;
